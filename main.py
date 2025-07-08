@@ -4,7 +4,7 @@ import markdown
 
 app = FastAPI()
 
-MAX_INPUT_LENGTH = 1000000  
+MAX_INPUT_LENGTH = 100000
 
 class MarkdownRequest(BaseModel):
     text: str = Field(..., example="## Sample Markdown\nThis is *italic* and **bold**.")
